@@ -213,13 +213,4 @@ nav a {
   gap: 20px;
 }
 
-article:nth-child(2) {
-  padding: 5%;
-  display: flex;
-}
-article:nth-child(2) img {
-  display: flex;
-  width: 100%;
-}
-
 /*# sourceMappingURL=css.css.map */
