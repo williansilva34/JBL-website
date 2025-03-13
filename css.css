@@ -1,0 +1,372 @@
+@charset "UTF-8";
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 150vh;
+}
+
+.btn1 {
+  background-color: orange;
+  width: 39%;
+  height: 20px;
+  border: none;
+  color: white;
+  filter: saturate(3px);
+}
+
+#btn1 {
+  width: 100%;
+  display: flex;
+}
+
+/* Estilização do cabeçalho */
+.header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 95%, rgb(0, 5, 6) 100%, rgb(0, 212, 255) 100%);
+  padding-inline: 15px;
+}
+
+/* Navegação principal */
+.nav {
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 95%, rgb(0, 5, 6) 100%, rgb(0, 212, 255) 100%);
+}
+
+/* Estilização da logo */
+.logo {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Lista de navegação */
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding-block: 16px;
+}
+
+/* Botão hamburguer */
+.hambu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  z-index: 20;
+}
+
+.hambu div {
+  width: 30px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hambu div:nth-child(1) {
+  top: 0;
+}
+
+.hambu div:nth-child(2) {
+  top: 10px;
+}
+
+.hambu div:nth-child(3) {
+  top: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 740px) {
+  .hambu {
+    display: block;
+  }
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    clip-path: circle(0px at 90% -15%);
+    transition: clip-path 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .nav-list a {
+    font-size: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  /* Delay para os links aparecerem suavemente */
+  .nav-list li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+  .nav-list li:nth-child(2) a {
+    transition-delay: 0.4s;
+  }
+  .nav-list li:nth-child(3) a {
+    transition-delay: 0.6s;
+  }
+  .nav-list li:nth-child(4) a {
+    transition-delay: 0.8s;
+  }
+  /* Ativação do menu */
+  .nav.active .nav-list {
+    clip-path: circle(2500px at 50% 50%);
+    background-color: orange;
+    pointer-events: all;
+    opacity: 1;
+  }
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+  /* Transformação do hambúrguer em "X" */
+  .nav.active .hambu div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  .nav.active .hambu div:nth-child(2) {
+    opacity: 0;
+  }
+  .nav.active .hambu div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+}
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.titulo h1 {
+  font-size: 7rem;
+  color: white;
+  z-index: 22;
+}
+
+.texto p {
+  color: white;
+  text-align: justify;
+}
+
+.logo {
+  height: 50px;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  padding: 5%;
+  display: flex;
+}
+.banner #banner {
+  width: 100%;
+  height: 350px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  align-items: center;
+}
+
+.article1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  gap: 20px;
+}
+
+article:nth-child(2) {
+  padding: 5%;
+  display: flex;
+}
+article:nth-child(2) img {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    width: 90%;
+    height: auto;
+  }
+  .manual-navigation,
+  .navigation-auto {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 3;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 2%;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -23%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -76%;
+}
+
+.navigation-auto div {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 38px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: orange;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: orange;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: orange;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    width: 90%;
+  }
+  .manual-navigation, .navigation-auto {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .manual-btn, .navigation-auto div {
+    padding: 3px;
+    margin-right: 10px;
+  }
+}
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=css.css.map */

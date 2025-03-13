@@ -1,0 +1,137 @@
+
+/* Estilização do cabeçalho */
+.header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 95%, rgba(0,5,6,1) 100%, rgba(0,212,255,1) 100%);
+    padding-inline: 15px;
+}
+
+/* Navegação principal */
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 95%, rgba(0,5,6,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+/* Estilização da logo */
+.logo {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Lista de navegação */
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding-block: 16px;
+}
+
+/* Botão hamburguer */
+.hambu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    z-index: 20;
+}
+
+.hambu div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hambu div:nth-child(1) { top: 0; }
+.hambu div:nth-child(2) { top: 10px; }
+.hambu div:nth-child(3) { top: 20px; }
+
+/* Responsividade para telas menores */
+@media (max-width: 740px) {
+    .hambu {
+        display: block;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: purple;
+        clip-path: circle(0px at 90% -15%);
+        transition: clip-path 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .nav-list a {
+        font-size: 25px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Delay para os links aparecerem suavemente */
+    .nav-list li:nth-child(1) a { transition-delay: 0.2s; }
+    .nav-list li:nth-child(2) a { transition-delay: 0.4s; }
+    .nav-list li:nth-child(3) a { transition-delay: 0.6s; }
+    .nav-list li:nth-child(4) a { transition-delay: 0.8s; }
+
+    /* Ativação do menu */
+    .nav.active .nav-list {
+        clip-path: circle(2500px at 50% 50%);
+        background-color: orange;
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    /* Transformação do hambúrguer em "X" */
+    .nav.active .hambu div:nth-child(1) {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+
+    .nav.active .hambu div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav.active .hambu div:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+}
+
+
+nav a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+        font-style: normal;
+  
+}

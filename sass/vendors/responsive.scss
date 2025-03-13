@@ -1,0 +1,23 @@
+
+
+@media screen and (max-width: 990px) {
+
+.section{
+    flex-direction: column;
+}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 90%;
+        height: auto;
+    }
+    .manual-navigation,
+    .navigation-auto {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
