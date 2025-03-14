@@ -27,4 +27,4 @@ gsap.registerEffect({
 
 // Aplicando o efeito com cor personalizada
 gsap.effects.scrollEffect("#titulo2", { start: "top 80%", end: "bottom 50%", colorStart: "#ff0000", colorEnd: "#00ff00" });
-gsap.effects.scrollEffect("#titulo", { start: "top 50%", end: "bottom bottom", colorStart: "#0000ff", colorEnd: "#ff00ff" , back:"blue"});
+gsap.effects.scrollEffect("#titulo", { start: "top 50%", end: "bottom bottom", colorStart: "#0000ff", colorEnd: "#ff00ff" });
