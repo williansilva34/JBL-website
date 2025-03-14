@@ -5,6 +5,18 @@ h1 {
   font-style: normal;
 }
 
+ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -27,7 +39,7 @@ a {
   border: none;
   color: white;
   filter: saturate(3px);
-  width: 10%;
+  width: 20%;
 }
 
 #btn1 {
@@ -323,6 +335,16 @@ footer {
 @media (max-width: 480px) {
   .titulo h1 {
     font-size: 2.5rem; /* Reduz para telas muito pequenas */
+  }
+}
+/* Ajuste de título para telas menores */
+@media (max-width: 1192px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #btn2 {
+    margin: 16px;
   }
 }
 
