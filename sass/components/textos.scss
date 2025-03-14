@@ -9,3 +9,22 @@
     color: white;
     text-align: justify;
 }
+
+.hab {
+    display: flex;
+    justify-content: center;
+}
+.hab ul li {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+}
+
+#titulo{
+    opacity: 0;
+}

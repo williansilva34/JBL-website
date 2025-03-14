@@ -14,3 +14,39 @@
         height: 350px;
     }
 }
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap; /* Quebra a linha quando necessário */
+    justify-content: space-around; /* Centraliza os elementos */
+    gap: 20px; /* Espaço entre os itens */
+    width: 100%;
+}
+
+.banner2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+
+    &  img {
+        width: 350px; /* Ocupa todo o espaço disponível */
+        
+        height: 200px; /* Mantém a proporção da imagem */
+    }
+}
+
+
+
+/* MEDIA QUERIES PARA TELAS MENORES */
+@media (max-width: 768px) {
+    .projetos {
+        flex-direction: column; /* Empilha os elementos em telas pequenas */
+        align-items: center; /* Centraliza */
+    }
+
+    .banner2 img {
+        max-width: 80%; /* Reduz o tamanho da imagem */
+    }
+}

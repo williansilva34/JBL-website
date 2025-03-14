@@ -15,7 +15,8 @@ body {
 }
 
 .btn1 {
-  background-color: orange;
+  background: rgb(39, 113, 100);
+  background: linear-gradient(90deg, rgb(39, 113, 100) 20%, rgb(18, 169, 184) 100%, rgb(0, 5, 6) 100%);
   width: 15%;
   height: 20px;
   border: none;
@@ -28,10 +29,37 @@ body {
   display: flex;
 }
 
+#btn2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5%;
+}
+#btn2 button {
+  display: flex;
+  border-radius: 5px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  padding: 9px;
+  height: 30px;
+  color: white;
+  background-color: gray;
+}
+
+img:hover {
+  border: 1px solid white;
+}
+
+img {
+  transition: all 0.5s ease-in;
+}
+
 /* Estilização do cabeçalho */
 .header {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 95%, rgb(0, 5, 6) 100%, rgb(0, 212, 255) 100%);
+  background: rgb(39, 113, 100);
+  background: linear-gradient(90deg, rgb(39, 113, 100) 20%, rgb(18, 169, 184) 100%, rgb(0, 5, 6) 100%);
   padding-inline: 15px;
 }
 
@@ -41,10 +69,10 @@ body {
   height: 70px;
   margin-inline: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 95%, rgb(0, 5, 6) 100%, rgb(0, 212, 255) 100%);
+  background: rgb(39, 113, 100);
+  background: linear-gradient(90deg, rgb(39, 113, 100) 20%, rgb(18, 169, 184) 100%, rgb(0, 5, 6) 100%);
 }
 
 /* Estilização da logo */
@@ -181,6 +209,26 @@ nav a {
   text-align: justify;
 }
 
+.hab {
+  display: flex;
+  justify-content: center;
+}
+
+.hab ul li {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.titulo {
+  display: flex;
+  width: 100%;
+}
+
+#titulo {
+  opacity: 0;
+}
+
 .logo {
   height: 50px;
 }
@@ -196,6 +244,36 @@ nav a {
   height: 350px;
 }
 
+.projetos {
+  display: flex;
+  flex-wrap: wrap; /* Quebra a linha quando necessário */
+  justify-content: space-around; /* Centraliza os elementos */
+  gap: 20px; /* Espaço entre os itens */
+  width: 100%;
+}
+
+.banner2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+.banner2 img {
+  width: 350px; /* Ocupa todo o espaço disponível */
+  height: 200px; /* Mantém a proporção da imagem */
+}
+
+/* MEDIA QUERIES PARA TELAS MENORES */
+@media (max-width: 768px) {
+  .projetos {
+    flex-direction: column; /* Empilha os elementos em telas pequenas */
+    align-items: center; /* Centraliza */
+  }
+  .banner2 img {
+    max-width: 80%; /* Reduz o tamanho da imagem */
+  }
+}
 .section {
   display: flex;
   justify-content: space-around;

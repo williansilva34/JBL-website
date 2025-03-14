@@ -1,6 +1,6 @@
 .btn1{
-    background-color: orange;
-    width: 15%;
+    background: rgb(39,113,100);
+    background: linear-gradient(90deg, rgba(39,113,100,1) 20%, rgba(18,169,184,1) 100%, rgba(0,5,6,1) 100%);    width: 15%;
     height: 20px;
     border: none;
     color: white;
@@ -13,4 +13,25 @@
  
     display: flex;
 
+}
+
+#btn2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+
+    & button{
+        display: flex;
+        border-radius: 5px;
+        width: 50%;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        padding:9px;
+        height: 30px;
+    
+        color: white;
+       background-color: gray;
+    }
 }

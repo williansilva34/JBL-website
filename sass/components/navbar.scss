@@ -1,9 +1,9 @@
 
 /* Estilização do cabeçalho */
 .header {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 95%, rgba(0,5,6,1) 100%, rgba(0,212,255,1) 100%);
-    padding-inline: 15px;
+    
+    background: rgb(39,113,100);
+    background: linear-gradient(90deg, rgba(39,113,100,1) 20%, rgba(18,169,184,1) 100%, rgba(0,5,6,1) 100%);    padding-inline: 15px;
 }
 
 /* Navegação principal */
@@ -12,11 +12,10 @@
     height: 70px;
     margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 95%, rgba(0,5,6,1) 100%, rgba(0,212,255,1) 100%);
-}
+    background: rgb(39,113,100);
+    background: linear-gradient(90deg, rgba(39,113,100,1) 20%, rgba(18,169,184,1) 100%, rgba(0,5,6,1) 100%);}
 
 /* Estilização da logo */
 .logo {
