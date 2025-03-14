@@ -68,6 +68,7 @@
 @media (max-width: 740px) {
     .hambu {
         display: block;
+        z-index: 434343;
     }
 
     .nav-list {
@@ -105,6 +106,7 @@
         background-color: orange;
         pointer-events: all;
         opacity: 1;
+        z-index: 33;
     }
 
     .nav.active .nav-list a {

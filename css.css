@@ -153,6 +153,7 @@ img {
 @media (max-width: 740px) {
   .hambu {
     display: block;
+    z-index: 434343;
   }
   .nav-list {
     position: fixed;
@@ -194,6 +195,7 @@ img {
     background-color: orange;
     pointer-events: all;
     opacity: 1;
+    z-index: 33;
   }
   .nav.active .nav-list a {
     opacity: 1;
@@ -330,6 +332,7 @@ footer {
   .titulo h1 {
     font-size: 3.5rem; /* Reduz mais para telas pequenas */
     text-align: center; /* Centraliza o título */
+    z-index: 3;
   }
 }
 @media (max-width: 480px) {
