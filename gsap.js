@@ -22,7 +22,7 @@ gsap.registerEffect({
             { opacity: 1, x: config.xEnd || 0, color: config.colorEnd || "#000000", duration: config.duration || 1,background:config.back }
         );
     },
-    defaults: { xStart: -100, xEnd: 0, duration: 1, colorStart: "#ff0000", colorEnd: "#000000" }
+    defaults: { xStart: -450, xEnd: 0, duration: 1, colorStart: "#ff0000", colorEnd: "#000000" }
 });
 
 // Aplicando o efeito com cor personalizada

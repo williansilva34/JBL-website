@@ -1,0 +1,28 @@
+@media screen and (max-width:1200px) {
+    
+ .article1{
+    width: 45%;
+ }
+
+}
+
+/* Ajuste de título para telas menores */
+@media (max-width: 1200px) {
+    .titulo h1 {
+      font-size: 5rem; /* Reduz o tamanho em telas médias */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .titulo h1 {
+      font-size: 3.5rem; /* Reduz mais para telas pequenas */
+      text-align: center; /* Centraliza o título */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titulo h1 {
+      font-size: 2.5rem; /* Reduz para telas muito pequenas */
+    }
+  }
+  
