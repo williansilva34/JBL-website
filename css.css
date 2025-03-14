@@ -14,6 +14,11 @@ body {
   height: 150vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .btn1 {
   background: rgb(39, 113, 100);
   background: linear-gradient(90deg, rgb(39, 113, 100) 20%, rgb(18, 169, 184) 100%, rgb(0, 5, 6) 100%);
@@ -276,6 +281,11 @@ nav a {
     max-width: 80%; /* Reduz o tamanho da imagem */
   }
 }
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
 .section {
   display: flex;
   justify-content: space-around;
